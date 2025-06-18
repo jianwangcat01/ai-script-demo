@@ -20,7 +20,7 @@ with st.form("generate_form"):
     submit = st.form_submit_button("✨ Generate Script")
 
 # Initialize Gemini model
-model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+model = genai.GenerativeModel(model_name="gemini-2.0-flash-lite")
 
 # Generate dialogue
 if submit and prompt.strip():
