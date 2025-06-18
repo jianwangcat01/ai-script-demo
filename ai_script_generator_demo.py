@@ -2,7 +2,12 @@ import streamlit as st
 import google.generativeai as genai
 
 # Set your Gemini API Key (get one at https://ai.google.dev)
-genai.configure(api_key="AIzaSyB7pA_GhOcZiQaJD3v8KsvpkH6TAT72t7I")
+import streamlit as st
+import google.generativeai as genai
+
+# Load Gemini API key from Streamlit secrets
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+
 
 st.set_page_config(page_title="🎭 AI Script Generator (Gemini Version)")
 
